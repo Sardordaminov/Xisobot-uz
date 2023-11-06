@@ -19,9 +19,9 @@ const Home = () => {
         barcha fanlar alohida kategoriyalarda joylashganligi, pul mablag`larini kuzatib borish
         va turli xil  qulay imkoniyatlar, barchasi bizda ta'minlangan!</p></div>
       <div className="cards">
-        <div className="card"><i class="fa-regular fa-cloud-arrow-down"></i><p>Dasturni o'rnatib, o'rgatish mutlaqo bepul!</p></div>
-        <div className="card"><i class="fa-regular fa-file-certificate"></i><p>Litsenziya amal qilishmud datigacha qo'llab quvvatlash!</p></div>
-        <div className="card"><i class="fa-light fa-thumbs-up"></i><p>Barcha xizmat vahuquqlar kafolatlangan!</p></div>
+        <div className="card"><i className="fa-regular fa-cloud-arrow-down"></i><p>Dasturni o'rnatib, o'rgatish mutlaqo bepul!</p></div>
+        <div className="card"><i className="fa-regular fa-file-certificate"></i><p>Litsenziya amal qilishmud datigacha qo'llab quvvatlash!</p></div>
+        <div className="card"><i className="fa-light fa-thumbs-up"></i><p>Barcha xizmat vahuquqlar kafolatlangan!</p></div>
       </div>
       <div className="footer">InnaSite - kompaniyasi tomonidan ishlab chiqilgan!</div>
     </div>

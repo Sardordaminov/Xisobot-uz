@@ -20,11 +20,13 @@ export default function Login() {
 
   const handleLogin = () => {
     if (email === 'serdar' && password === 'sardor2210') {
-      window.location.pathname = "/dashboard"
+      window.localStorage.setItem('access', true);
+      window.location.pathname = '/'
     } else {
-      toast.error('Something wrong !', {});
+      toast.error('Something is wrong!', {});
     }
   };
+
 
 
   return (

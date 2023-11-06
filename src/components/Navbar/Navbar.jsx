@@ -5,12 +5,15 @@ import NavbarLogo from '../../assets/home-navbar-img.png'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const handleLogout = () => {
+        window.localStorage.removeItem('access')
+    }
     return (
         <div className='navbar'>
             <button className='opener' onClick={() => { setOpen(!open) }}><i className="fa-solid fa-bars"></i></button>
             <div className={`navbar-item ${open && 'active'}`}>
                 <div className="col first">
-                    <NavLink to="/dashboard"><li className='active'>Главный</li></NavLink>
+                    <NavLink to="/"><li className='active'>Главный</li></NavLink>
                     <NavLink to="/mentors"><li>Наставники</li></NavLink>
                     <NavLink to="/students"><li>Учащиеся</li></NavLink>
                     <NavLink to="/branches"><li>Ветви</li></NavLink>
@@ -19,7 +22,7 @@ const Navbar = () => {
                 <div className="col sec">
                     <NavLink to="/report"><li>Поддерживать</li></NavLink>
                     <NavLink to="/report"><li>Настройки</li></NavLink>
-                    <NavLink to="/"><li className='logout' title='logout'><i className="fa-solid fa-right-from-bracket"></i></li></NavLink>
+                    <NavLink onClick={handleLogout}><li className='logout' title='logout'><i className="fa-solid fa-right-from-bracket"></i></li></NavLink>
                 </div>
                 <button className='nav_closer' onClick={() => { setOpen(!open) }}><i className="fa-solid fa-xmark"></i></button>
             </div>
